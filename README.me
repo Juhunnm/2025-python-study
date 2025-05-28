@@ -1,0 +1,81 @@
+# 가상환경
+python -m venv 폴더명(python_ex)
+ ->cd 폴더명/script 이동
+        가상환경 명령어
+    -> activate  활성화
+    -> deactivate 비활성화
+
+# 패키지 설치 명령어
+pip 
+
+interpreter > 활성화한 가상환경 select
+
+
+#클로져 closure
+
+
+# Text 문자열
+
+문자열 변경할 수 없다 -> 불변
+>>> word = 'Python'
+>>> word[0] = 'J' -> error
+>>> word[2:] = 'py' -> error
+
+문자열 필요하면 새로 만들어야한다.
+>>> 'J' + word[1:]
+'Jython'
+>>> word[:2] + 'py'
+'Pypy' 
+
+len() #문자길이
+
+# 리스트 (가변)
+.append() #리스트 끝에 추가
+
+.id() #고유한 식별자를 반환하는 함수
+    a = [1, 2, 3]
+    b = [1, 2, 3]
+    a = c
+    id(a) == id(b)  # False
+    id(a) == id(c)  # True
+
+모든 슬라이스 연산은 새리스트를 반환한다.
+
+
+# if문
+ if:
+ elif:
+ else:
+
+ # for문 
+ for variable in list:
+
+ .copy() 복사
+ .items() key,value값 가져오기
+
+
+### range() 함수
+(초깃값,끝값,증감값)
+
+for i in range(5):
+    print(i)
+    # 0 1 2 3 4 
+
+step
+list(range(5, 10))
+[5, 6, 7, 8, 9]
+
+list(range(0, 10, 3))
+[0, 3, 6, 9]
+
+list(range(-10, -100, -30))
+[-10, -40, -70]
+
+range() + len() 
+a = ['Mary', 'had', 'a', 'little', 'lamb']
+for i in range(len(a)):
+    print(i, a[i])
+
+enumerate()
+
+summ(range(4)) #6
